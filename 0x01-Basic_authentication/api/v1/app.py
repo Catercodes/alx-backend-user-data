@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """the python shebang"""
 
 from flask import Flask, jsonify
