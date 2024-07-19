@@ -50,7 +50,7 @@ class DB:
         session.commit()
 
         # Refresh the new_user instance to reflect the newly assigned ID
-        session.refresh(new_user)
+        # session.refresh(new_user)
 
         # Return the newly created user
         return new_user
