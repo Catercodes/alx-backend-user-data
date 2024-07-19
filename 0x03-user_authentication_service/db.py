@@ -36,7 +36,11 @@ class DB:
         """
         new_user = User()
         # Create a new User object
-        new_user = User(email=email, hashed_password=hashed_password)
+        # new_user = User(email=email, hashed_password=hashed_password)
+
+        # Fetching the emain and password
+        new_user.email = email
+        new_user.hashed_password = hashed_password
 
         # Add the new user to the session
         session = self._session
