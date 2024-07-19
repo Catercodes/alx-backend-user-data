@@ -43,11 +43,10 @@ class DB:
         new_user.hashed_password = hashed_password
 
         # Add the new user to the session
-        session = self._session
-        session.add(new_user)
+        self._session.add(new_user)
 
         # Commit the session to save the user to the database
-        session.commit()
+        self._session.commit()
 
         # Refresh the new_user instance to reflect the newly assigned ID
         # session.refresh(new_user)
